@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.aurum.paper.daily</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/bash</string>
+        <string>/Users/USER/Documents/Default Project/aurum-bot/scripts/daily_job.sh</string>
+    </array>
+    <key>WorkingDirectory</key>
+    <string>/Users/USER/Documents/Default Project/aurum-bot</string>
+    <key>StartCalendarInterval</key>
+    <array>
+        <dict><key>Weekday</key><integer>1</integer><key>Hour</key><integer>16</integer><key>Minute</key><integer>20</integer></dict>
+        <dict><key>Weekday</key><integer>2</integer><key>Hour</key><integer>16</integer><key>Minute</key><integer>20</integer></dict>
+        <dict><key>Weekday</key><integer>3</integer><key>Hour</key><integer>16</integer><key>Minute</key><integer>20</integer></dict>
+        <dict><key>Weekday</key><integer>4</integer><key>Hour</key><integer>16</integer><key>Minute</key><integer>20</integer></dict>
+        <dict><key>Weekday</key><integer>5</integer><key>Hour</key><integer>16</integer><key>Minute</key><integer>20</integer></dict>
+    </array>
+    <key>StandardOutPath</key>
+    <string>/Users/USER/Documents/Default Project/aurum-bot/logs/launchd_daily.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/USER/Documents/Default Project/aurum-bot/logs/launchd_daily.log</string>
+</dict>
+</plist>

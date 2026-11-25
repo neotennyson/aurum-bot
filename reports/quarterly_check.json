@@ -1,0 +1,193 @@
+{
+  "as_of": "2026-10-01",
+  "window_start": "2022-01-01",
+  "regime": {
+    "variants": [
+      {
+        "params": {
+          "sma_period": 150,
+          "exit_buffer_atr": 0.0
+        },
+        "return": 0.12770942867274404,
+        "dd": -0.23709466918580702,
+        "sharpe": 0.25697554194628913
+      },
+      {
+        "params": {
+          "sma_period": 150,
+          "exit_buffer_atr": 0.5
+        },
+        "return": 0.17455683424459933,
+        "dd": -0.24193750179564888,
+        "sharpe": 0.3158101863705462
+      },
+      {
+        "params": {
+          "sma_period": 150,
+          "exit_buffer_atr": 1.0
+        },
+        "return": 0.11038221809353788,
+        "dd": -0.2353336910869933,
+        "sharpe": 0.229352631073612
+      },
+      {
+        "params": {
+          "sma_period": 175,
+          "exit_buffer_atr": 0.0
+        },
+        "return": 0.03069115742642725,
+        "dd": -0.2603911547589566,
+        "sharpe": 0.11882632103983938
+      },
+      {
+        "params": {
+          "sma_period": 175,
+          "exit_buffer_atr": 0.5
+        },
+        "return": -0.007348756299257464,
+        "dd": -0.2715114252795492,
+        "sharpe": 0.0637544081077426
+      },
+      {
+        "params": {
+          "sma_period": 175,
+          "exit_buffer_atr": 1.0
+        },
+        "return": 0.031090215333068105,
+        "dd": -0.2454111939545881,
+        "sharpe": 0.12054485304449924
+      },
+      {
+        "params": {
+          "sma_period": 200,
+          "exit_buffer_atr": 0.0
+        },
+        "return": 0.006321112176509658,
+        "dd": -0.2601619386422259,
+        "sharpe": 0.08361481152705696
+      },
+      {
+        "params": {
+          "sma_period": 200,
+          "exit_buffer_atr": 0.5
+        },
+        "return": 0.10997431176444983,
+        "dd": -0.2767300167997968,
+        "sharpe": 0.22644126755089594
+      },
+      {
+        "params": {
+          "sma_period": 200,
+          "exit_buffer_atr": 1.0
+        },
+        "return": 0.14037850542261876,
+        "dd": -0.27388239618007326,
+        "sharpe": 0.26312802862616547
+      },
+      {
+        "params": {
+          "sma_period": 225,
+          "exit_buffer_atr": 0.0
+        },
+        "return": 0.2359338569562952,
+        "dd": -0.186200676041667,
+        "sharpe": 0.3812248308140917
+      },
+      {
+        "params": {
+          "sma_period": 225,
+          "exit_buffer_atr": 0.5
+        },
+        "return": 0.22579984380786855,
+        "dd": -0.21205233985069116,
+        "sharpe": 0.36381588385880076
+      },
+      {
+        "params": {
+          "sma_period": 225,
+          "exit_buffer_atr": 1.0
+        },
+        "return": 0.15608002084519068,
+        "dd": -0.26260496058871474,
+        "sharpe": 0.28143853809234504
+      }
+    ],
+    "median_return": 0.12770942867274404,
+    "positive_share": 0.9166666666666666,
+    "deployed_return": 0.10997431176444983,
+    "status": "confirmed_funded"
+  },
+  "tsmom": {
+    "variants": [
+      {
+        "params": {
+          "lookback": 42,
+          "exit_lookback": 10
+        },
+        "return": -0.07171621357446367,
+        "dd": -0.1530461733583952,
+        "sharpe": -0.08417932133093621
+      },
+      {
+        "params": {
+          "lookback": 42,
+          "exit_lookback": 21
+        },
+        "return": 0.01101960926479384,
+        "dd": -0.13335491788682963,
+        "sharpe": 0.08162765866779939
+      },
+      {
+        "params": {
+          "lookback": 63,
+          "exit_lookback": 10
+        },
+        "return": -0.09153041883471202,
+        "dd": -0.24076414413386915,
+        "sharpe": -0.11037936536241022
+      },
+      {
+        "params": {
+          "lookback": 63,
+          "exit_lookback": 21
+        },
+        "return": 0.039749823645443216,
+        "dd": -0.1766500815940132,
+        "sharpe": 0.13204284459043567
+      },
+      {
+        "params": {
+          "lookback": 126,
+          "exit_lookback": 10
+        },
+        "return": -0.3248537810491392,
+        "dd": -0.36334066823007327,
+        "sharpe": -0.5961631136018879
+      },
+      {
+        "params": {
+          "lookback": 126,
+          "exit_lookback": 21
+        },
+        "return": -0.29018247924991136,
+        "dd": -0.32439669136962723,
+        "sharpe": -0.4644480275534998
+      }
+    ],
+    "median_return": -0.07171621357446367,
+    "positive_share": 0.3333333333333333,
+    "deployed_return": 0.039749823645443216,
+    "status": "stay_observation"
+  },
+  "stocks": {
+    "return": 1.0063467339721446,
+    "cagr": 0.15826847470468608,
+    "dd": -0.16464512635965023,
+    "sharpe": 0.9462368429290219,
+    "status": "funded"
+  },
+  "criteria": {
+    "tsmom_promotion": "median variant > 0, >=60% variants positive, deployed params positive",
+    "regime_funding": "median variant > 0, >=60% variants positive"
+  }
+}

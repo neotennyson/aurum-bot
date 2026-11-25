@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="theme-color" content="#0A0C10"/>
+<meta name="description" content="AURUM — systematic NIFTY and stock F&O paper-trading terminal. Research and paper only."/>
+<title>AURUM · NIFTY F&amp;O Terminal</title>
+<link rel="icon" href="/favicon.svg"/>
+<link rel="stylesheet" href="/app.css"/>
+<script src="/vendor/lightweight-charts.js" defer></script>
+<script src="/app.js" defer></script>
+</head>
+<body>
+<div class="app">
+  <aside class="rail">
+    <div class="logo">
+      <span class="mark">A</span>
+      <span class="word">AURUM</span>
+    </div>
+    <nav id="nav">
+      <button class="nav active" data-page="overview" aria-label="Overview">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
+        Overview
+      </button>
+      <button class="nav" data-page="performance" aria-label="Performance">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg>
+        Performance
+      </button>
+      <button class="nav" data-page="trades" aria-label="Trades">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+        Trades
+      </button>
+      <button class="nav" data-page="validation" aria-label="Validation">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v6c0 4.2-2.8 7.4-7 9-4.2-1.6-7-4.8-7-9V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg>
+        Validation
+      </button>
+    </nav>
+    <div class="rail-foot">
+      <span class="chip ok">Paper only</span>
+      <span class="fine">No live order path</span>
+    </div>
+  </aside>
+
+  <div class="main">
+    <header class="topbar">
+      <div class="ticker" id="ticker"><span class="fine">loading market data…</span></div>
+      <div class="meta" id="meta"></div>
+    </header>
+
+    <main>
+      <section class="page active" id="page-overview"></section>
+      <section class="page" id="page-performance"></section>
+      <section class="page" id="page-trades"></section>
+      <section class="page" id="page-validation"></section>
+      <footer class="footer">AURUM · Powered by <em>DeepSeek 4.1 Flash</em></footer>
+    </main>
+  </div>
+</div>
+</body>
+</html>

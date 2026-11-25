@@ -1,0 +1,16 @@
+# secrets and local runtime - never commit
+.env
+.env.*
+!.env.example
+secrets*.json
+.streamlit/secrets.toml
+logs/
+state/
+bin/
+AURUM_DASHBOARD_URL.txt
+# market data is licensed / regenerable (scripts/fetch*.py)
+data/
+__pycache__/
+*.py[cod]
+.venv/
+.DS_Store

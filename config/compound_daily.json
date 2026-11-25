@@ -1,0 +1,45 @@
+{
+  "symbol": "48704",
+  "timeframe": "1d",
+  "bar_minutes": 375,
+  "intraday_only": false,
+  "session_start": "09:15",
+  "flatten_at": "15:10",
+  "entry_cutoff": "14:45",
+  "strategy": "regimeoverlay",
+  "params": {
+    "sma_period": 200,
+    "atr_period": 14,
+    "stop_atr": 3.5,
+    "entry_buffer_atr": 0.0,
+    "exit_buffer_atr": 0.5,
+    "allow_short": false,
+    "target_r": 100.0,
+    "max_holding_bars": 0
+  },
+  "costs": {
+    "slippage_bps": 1.5,
+    "brokerage_per_order": 20.0,
+    "brokerage_pct": 0.0003,
+    "exchange_pct": 0.000019,
+    "stt_sell_pct": 0.0002,
+    "stamp_buy_pct": 0.00002,
+    "sebi_pct": 0.000001,
+    "gst_pct": 0.18
+  },
+  "risk": {
+    "capital": 450000.0,
+    "risk_per_trade_pct": 0.02,
+    "sizing_mode": "notional",
+    "target_notional_pct": 8.0,
+    "max_notional_pct": 8.0,
+    "margin_pct": 0.15,
+    "max_margin_pct": 0.7,
+    "max_quantity": 20,
+    "multiplier": 75.0,
+    "daily_loss_pct": 0.1,
+    "max_trades_per_day": 1,
+    "max_consecutive_losses": 10,
+    "cooldown_bars": 1
+  }
+}

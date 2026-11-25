@@ -1,0 +1,31 @@
+{
+  "as_of": "2026-11-03T16:25:15",
+  "sleeves": {
+    "regime": {
+      "equity": 1000000.0,
+      "status": "flat",
+      "last": "2026-11-02T00:00:00+05:30"
+    },
+    "compound": {
+      "equity": 450000.0,
+      "status": "flat",
+      "last": "2026-11-02T00:00:00+05:30"
+    },
+    "stocks": {
+      "equity": 1000000.0,
+      "status": "flat",
+      "last": "2026-11-02"
+    },
+    "tsmom": {
+      "equity": 1000000.0,
+      "status": "flat",
+      "last": "2026-11-02T00:00:00+05:30"
+    }
+  },
+  "exit_codes": {
+    "regime": "0",
+    "compound": "0",
+    "stocks": "0",
+    "tsmom": "0"
+  }
+}

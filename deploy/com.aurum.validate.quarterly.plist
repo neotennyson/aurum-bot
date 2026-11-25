@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.aurum.validate.quarterly</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/bash</string>
+        <string>-lc</string>
+        <string>cd "/Users/USER/Documents/Default Project/aurum-bot" &amp;&amp; python3 scripts/quarterly_check.py</string>
+    </array>
+    <key>WorkingDirectory</key>
+    <string>/Users/USER/Documents/Default Project/aurum-bot</string>
+    <key>StartCalendarInterval</key>
+    <array>
+        <dict><key>Month</key><integer>1</integer><key>Day</key><integer>1</integer><key>Hour</key><integer>17</integer><key>Minute</key><integer>0</integer></dict>
+        <dict><key>Month</key><integer>4</integer><key>Day</key><integer>1</integer><key>Hour</key><integer>17</integer><key>Minute</key><integer>0</integer></dict>
+        <dict><key>Month</key><integer>7</integer><key>Day</key><integer>1</integer><key>Hour</key><integer>17</integer><key>Minute</key><integer>0</integer></dict>
+        <dict><key>Month</key><integer>10</integer><key>Day</key><integer>1</integer><key>Hour</key><integer>17</integer><key>Minute</key><integer>0</integer></dict>
+    </array>
+    <key>StandardOutPath</key>
+    <string>/Users/USER/Documents/Default Project/aurum-bot/logs/launchd_quarterly.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/USER/Documents/Default Project/aurum-bot/logs/launchd_quarterly.log</string>
+</dict>
+</plist>
